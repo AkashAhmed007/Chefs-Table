@@ -1,9 +1,7 @@
 export default function Header() {
   return (
-<>
-    
-    <div className="flex justify-around items-center p-4">
-        <h1 className="text-2xl font-bold">Recipe Calories</h1>
+    <div className="flex justify-around items-center p-4 m-4">
+        <h1 className="text-3xl font-bold">Recipe Calories</h1>
         <ul className="flex justify-center items-center gap-5 text-xl text-gray-800 ml-5">
             <li>Home</li>
             <li>Recipe</li>
@@ -15,8 +13,6 @@ export default function Header() {
             <input type="text" placeholder="Search" className="w-24 md:w-auto outline-none border-1 bg-[#150b2b0d] rounded-2xl px-4 py-2" />
             <img src="./user.png" alt="" />
         </div>
-    </div>
-</>
-   
+    </div> 
   )
 }
