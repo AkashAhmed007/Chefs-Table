@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import Card from "../card/Card";
-export default function Cards() {
+export default function Cards({handleCard}) {
   const [cards,setCards] = useState([]);
 
   useEffect(()=>{
@@ -11,9 +11,11 @@ export default function Cards() {
 
   return (
     <>
+     
      {
-      cards.map((card,i) =><Card key={card.recipe_id} card={card}></Card>)
+      cards.map((card,i) =><Card key={card.recipe_id} card={card} handleCard={handleCard}></Card>)
      }
+     
       
     </>
   )
