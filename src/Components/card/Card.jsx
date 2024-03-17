@@ -11,10 +11,11 @@ export default function Card({card,handleCard}) {
             <p className='mb-4 text-gray-600'>{card.short_description}</p>
             <hr/>
             <p className='font-bold mt-2'>Ingredients: {card.ingredients.length}</p>
+            
             <ul>
-                <li>{card.ingredients[0]}</li>
-                <li>{card.ingredients[1]}</li>
-                <li>{card.ingredients[2]}</li>
+                <li>1. {card.ingredients[0]}</li>
+                <li>2. {card.ingredients[1]}</li>
+                <li>3. {card.ingredients[2]}</li>
                 
             </ul>
         </div>

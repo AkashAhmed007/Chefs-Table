@@ -9,10 +9,8 @@ export default function Banner() {
         
         <div className="text-center">
             <button className="px-5 py-2 bg-[#0be58a] rounded-full mr-5">Explore Now</button>
-            <button className="text-white px-5 py-2 border-2 rounded-full">Our Feedback</button>
-            
+            <button className="text-white px-5 py-2 border-2 rounded-full">Our Feedback</button> 
         </div>
-        
     </div>
     
   )

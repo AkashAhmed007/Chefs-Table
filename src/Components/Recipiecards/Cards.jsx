@@ -11,12 +11,9 @@ export default function Cards({handleCard}) {
 
   return (
     <>
-     
      {
-      cards.map((card,i) =><Card key={card.recipe_id} card={card} handleCard={handleCard}></Card>)
+      cards.map((card) =><Card key={card.recipe_id} card={card} handleCard={handleCard}></Card>)
      }
-     
-      
     </>
   )
 }
