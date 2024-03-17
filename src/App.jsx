@@ -58,11 +58,11 @@ function handlePrepare(item,item2,item3){
      <Header></Header>
      <Banner></Banner>
      <Recipe></Recipe>
-     <div className="flex gap-5 w-10/12 mx-auto">
-        <div className="flex flex-wrap">
+     <div className="container mx-auto flex justify-center gap-5">
+        <div className="flex flex-wrap w-1/2 border-2 rounded-xl">
           <Cards handleCard={handleCard}></Cards>
         </div>
-        <div className="w-10/12 border-2 rounded-2xl">
+        <div className="w-1/2 border-2 rounded-2xl">
          <Table cookItem={cookItem}></Table>
          
          {
@@ -77,9 +77,9 @@ function handlePrepare(item,item2,item3){
          {
           prepare.map((item,index)=><Prepare key={item.recipe_id} item={item} index={index}></Prepare>)
          }
-         <div className="text-xl font-bold text-right">
-          <p>Total Time: {cookTime}</p>
-          <p>Total Calories: {calories}</p>
+         <div className="text-xl font-bold text-right pr-3">
+          <p>Total Time: {cookTime} minutes</p>
+          <p>Total Calories: {calories} calories</p>
          </div>
         </div>  
      </div>

@@ -2,8 +2,8 @@ import image from '../../assets/time.png';
 import image2 from '../../assets/calories.png';
 export default function Card({card,handleCard}) {
   return (
-    <div className="card w-1/2 bg-base-100 shadow-xl">
-        <figure className="px-10 pt-10">
+    <div className="card w-1/2 bg-base-100">
+        <figure className="p-5">
         <img src= {card.recipe_image} alt="Shoes" className="rounded-xl" />
         </figure>
         <div className="p-8">
@@ -15,6 +15,7 @@ export default function Card({card,handleCard}) {
                 <li>{card.ingredients[0]}</li>
                 <li>{card.ingredients[1]}</li>
                 <li>{card.ingredients[2]}</li>
+                
             </ul>
         </div>
         <hr/>
